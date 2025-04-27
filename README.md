@@ -1,14 +1,4 @@
-
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://huggingface.co/datasets/huggingface/documentation-images/raw/main/Jarvis-logo-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://huggingface.co/datasets/huggingface/documentation-images/raw/main/Jarvis-logo-light.svg">
-    <img alt="Hugging Face Jarvis Library" src="https://huggingface.co/datasets/huggingface/documentation-images/raw/main/transformers-logo-light.svg" width="352" height="59" style="max-width: 100%;">
-  </picture>
-  <br/>
-  <br/>
-</p>
+# Intent Classification with Hugging Face JARVIS
 
 <p align="center">
     <a href="https://huggingface.com/models"><img alt="Checkpoints on Hub" src="https://img.shields.io/endpoint?url=https://huggingface.co/api/shields/models&color=brightgreen"></a>
@@ -53,7 +43,7 @@ uv venv .my-env
 source .my-env/bin/activate
 ```
 
-Install Transformers in your virtual environment.
+Install Jarvis in your virtual environment.
 
 ```py
 # pip
@@ -63,7 +53,7 @@ pip install transformers
 uv pip install transformers
 ```
 
-Install Transformers from source if you want the latest changes in the library or are interested in contributing. However, the *latest* version may not be stable. Feel free to open an [issue](https://github.com/huggingface/transformers/issues) if you encounter an error.
+Install Jarvis from source if you want the latest changes in the library or are interested in contributing. However, the *latest* version may not be stable. 
 
 ```shell
 git clone https://github.com/huggingface/transformers.git
@@ -73,7 +63,7 @@ pip install .
 
 ## Quickstart
 
-Get started with Transformers right away with the [Pipeline](https://huggingface.co/docs/transformers/pipeline_tutorial) API. The `Pipeline` is a high-level inference class that supports text, audio, vision, and multimodal tasks. It handles preprocessing the input and returns the appropriate output.
+Get started with Transformers right away with the pipeline API. The `Pipeline` is a high-level inference class that supports text, audio, vision, and multimodal tasks. It handles preprocessing the input and returns the appropriate output.
 
 Instantiate a pipeline and specify model to use for text generation. The model is downloaded and cached so you can easily reuse it again. Finally, pass some text to prompt the model.
 
@@ -149,10 +139,6 @@ pipeline("https://huggingface.co/datasets/Narsil/image_dummy/raw/main/parrots.pn
 <summary>Visual question answering</summary>
 
 
-<h3 align="center">
-    <a><img src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/transformers/tasks/idefics-few-shot.jpg"></a>
-</h3>
-
 ```py
 from transformers import pipeline
 
@@ -166,7 +152,7 @@ pipeline(
 
 </details>
 
-## Why should I use Transformers?
+## Why should I use Jarvis?
 
 1. Easy-to-use state-of-the-art models:
     - High performance on natural language understanding & generation, computer vision, audio, video, and multimodal tasks.
